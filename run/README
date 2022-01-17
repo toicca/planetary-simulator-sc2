@@ -1,0 +1,29 @@
+See project.pdf for a description of the program.
+
+Input instructions:
+Data format, units/types are inside brackets and multiple objects are input by writing more lines between number of objects and timestep. Timestep, length or steps should be 0, so the program can calculate the missing value.
+This document contains an example input for two objects, and the files SS_input.dat and SSN_input.dat contain example inputs for simulating the Solar System with inclination and without inclination respectively. Example input is also in the input.dat file, and output.dat contains output for the example input.
+
+Format:
+Number of objects [integer]
+Name/description [character] Mass [kg] PositionX PositionY PositionZ [meters] VelocityX VelocityY VelocityZ [meters/second]
+Timestep [seconds]
+Length [days]
+Steps [integer]
+Info interval [integer]
+Write interval[integer]
+
+Example:
+2
+Sun 1.98E+30 0 0 0 0 0 0
+Jupiter 1.89E+27 7.786E+11 0 0 0 13.1E+03 0
+6000
+4330
+0
+500
+10
+
+Output information:
+The output file is in csv-format with columns "Object","X","Y","Z","Time", and each new line contains information about a single object. Output units are SI standard. Example output is included in file SS_output.dat.
+
+

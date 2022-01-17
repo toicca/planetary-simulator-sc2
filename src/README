@@ -1,0 +1,14 @@
+Compilation:
+gfortran -c param_mod.f90
+gfortran -c types_mod.f90
+gfortran -c file_mod.f90
+gfortran -c dynamics_mod.f90
+gfortran -c main.f90
+gfortran *.o
+
+Running the program:
+./a.out
+
+Running the visualizations (requires Python):
+python 2Dvis.py
+python 3Dvis.py
